@@ -4,7 +4,7 @@ def buildJar() {
     sh 'mvn package'
 } 
 
-#build_dockerimage
+//build_dockerimage
 def buildImage() {
     echo "building the docker image..."
     withCredentials([usernamePassword(credentialsId: 'dockerhub-credentials', passwordVariable: 'PASSWORD', usernameVariable: 'USERNAME')]) {
