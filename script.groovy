@@ -1,4 +1,4 @@
-#build_artifact
+//build_artifact
 def buildJar() {
     echo "building the artifact..."
     sh 'mvn package'
